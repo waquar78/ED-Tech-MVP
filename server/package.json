@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "waquar",
+  "license": "ISC",
+  "dependencies": {
+    "@chroma-core/default-embed": "^0.1.8",
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.12.2",
+    "body-parser": "^2.2.0",
+    "chromadb": "^3.0.15",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.1",
+    "nodemon": "^3.1.10",
+    "pdf-parse": "^1.1.1",
+    "uuid": "^13.0.0",
+    "youtube-transcript": "^1.2.1",
+    "youtube-transcript-api": "^3.0.6"
+  }
+}
