@@ -10,7 +10,7 @@ export const scoreEssay = async (req, res) => {
   try {
     const { question, markingScheme, answer, userId } = req.body;
 
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
 
     const prompt = `
     You are an examiner. Score the essay strictly out of 25.

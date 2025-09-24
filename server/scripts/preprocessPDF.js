@@ -1,4 +1,4 @@
-// server/scripts/processPDF.js
+
 import dotenv from "dotenv";
 import path from "path";
 import { parsePDF } from "../utils/pdfParser.js";

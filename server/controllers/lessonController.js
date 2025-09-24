@@ -9,7 +9,7 @@ export const generateLesson = async (req, res) => {
   try {
     const { transcriptText } = req.body;
 
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
 
     const prompt = `
     Create a lesson page from the given transcript. Include:

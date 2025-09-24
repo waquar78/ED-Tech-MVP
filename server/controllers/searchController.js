@@ -30,7 +30,7 @@ export const ragSearch = async (req, res) => {
 
     const context = results.documents.flat().join("\n");
 
-    const chatModel = genAI.getGenerativeModel({ model: "gemini-pro" });
+    const chatModel = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
     const prompt = `Answer this question based on the context below:
       Question: ${query}
       Context: ${context}`;

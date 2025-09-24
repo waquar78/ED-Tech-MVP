@@ -63,6 +63,6 @@ export async function fetchVideoTranscript(
 }
 
 // run for testing
-//fetchVideoTranscript()
+fetchVideoTranscript()
 ;
 

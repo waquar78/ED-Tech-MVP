@@ -1,10 +1,8 @@
-// backend/controllers/userController.js
 import User from "../models/user.js";
 import Content from "../models/content.js";
 import dotenv from "dotenv";
 
 dotenv.config();
-
 
 // Function to update a user's mastery score
 export const updateMastery = async (req, res) => {
@@ -22,7 +20,7 @@ export const updateMastery = async (req, res) => {
 
     let newScore = 0;
     if (masteryEntry) {
-      // Agar pehle se mastery entry hai
+      // if entry exists, update it
       const currentScore = masteryEntry.score || 0;
       const currentAttempts = masteryEntry.attempts || 0;
       newScore = isCorrect
@@ -32,7 +30,7 @@ export const updateMastery = async (req, res) => {
       masteryEntry.score = newScore;
       masteryEntry.attempts = currentAttempts + 1;
     } else {
-      // Nai entry banayenge
+      // new entry
       newScore = isCorrect ? 1 : 0;
       user.mastery.push({ contentId, score: newScore, attempts: 1 });
     }
